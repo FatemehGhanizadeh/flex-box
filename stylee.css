@@ -1,0 +1,146 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    direction: rtl;
+}
+
+#header
+{
+    width: 100%;
+    background-color:#e7e7e7 ;
+    height:70px ;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header .logo
+{
+    height:50px ;
+
+}
+
+#header .logo img
+{
+height: 50px;
+}
+
+#header .navigation ul li
+{
+display: inline-block;
+
+}
+#header .navigation ul a
+{
+    text-decoration: none;
+    color:#333 ;
+    padding: 5px 8px;
+}
+
+.content
+{
+    width: 1200px;
+    margin: 10px auto;
+    display: flex;
+}
+
+.content .article
+{
+    background-color:royalblue;
+    padding:10px ;
+    border-radius:5px ;
+    color: #fff;
+    margin: 5px;
+    flex-basis: 80%;
+}
+
+.content .sidebar
+{
+    background-color: seagreen;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    color: #fff;
+    flex-basis: 20%;
+}
+
+
+.windows
+{
+    width: 1200px;
+    height: 300px;
+    margin: 10px auto;
+    display: flex;
+
+}
+
+.windows .left
+{
+    background-color: red;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    flex-grow: 4;
+}
+
+.windows .right
+{
+flex-basis: 20%;
+display: flex;
+flex-direction: column;
+}
+
+.windows .right .box
+{
+    background-color: green;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    flex-grow: 1;
+}
+
+.footer
+{
+    width: 100%;
+    height: 100px; 
+    background-color:gray ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.footer .item
+{
+    background-color: #333;
+    border-radius: 5px;
+    height: 45px;
+    margin: 10px;
+    padding: 10px;
+    flex-basis: 25%;
+
+}
+
+
+@media only screen and (max-width:896px)
+
+{
+    .content
+    {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .windows
+    {
+        width: 100%;
+    }
+    
+}
